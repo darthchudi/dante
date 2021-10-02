@@ -1,18 +1,24 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.16 <0.9.0;
 
 contract Store {
-    event ItemSet(bytes32 key, bytes32 value);
+    address public minter;
 
-    string public version;
-    mapping (bytes32 => bytes32) public items;
+    event ItemSet(uint key, string value);
 
-    constructor(string memory _version) {
-        version  = _version;
+    mapping (uint => string) public items;
+
+    constructor(){
+        minter = msg.sender;
     }
 
-    function setItem(bytes32 key, bytes32 value) external {
+    function setItem(uint key, string memory value) public {
+        require(msg.sender == minter, "Only the minter of this contract can set items");
         items[key] = value;
         emit ItemSet(key, value);
+    }
+
+    function getItem(uint key) public view returns (string memory) {
+        return items[key];
     }
 }

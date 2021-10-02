@@ -9,10 +9,11 @@ gen-abi:
 # Golang code.
 .PHONY: gen-abi-bindings
 gen-abi-bindings:
+	@mkdir bindings
 	@abigen --abi ./build/Store.abi \
- 			--pkg main \
+ 			--pkg bindings \
   			--type Store \
-   			--out contract_bindings.go
+   			--out bindings/bindings.go
 	@echo "✨ generated go bindings from abi file"
 
 
@@ -20,10 +21,11 @@ gen-abi-bindings:
 # Equivalent to gen-abi-bindings
 .PHONY: gen-sol-bindings
 gen-sol-bindings:
+	@mkdir bindings
 	@abigen --sol contracts/Store.sol \
-		--pkg main \
+		--pkg bindings \
 	   	--type Store \
-	    --out contract_bindings.go
+	    --out bindings/bindings.go
 	@echo "🌀 generated go bindings from solidity smart contract"
 
 # Generates the bytecode/binary file from the smart contract
@@ -33,19 +35,19 @@ gen-bytecode:
 	@echo "💖 generated smart contract bytecode from solidity smart contract"
 
 
-# Generates Golang bindings to deploy our smart contract
+# Cleans existing contract builds and generates Golang bindings to deploy our smart contract
 # with the smart contract, abi file and binary provided
 .PHONY: gen-deploy
-gen-deploy: gen-abi gen-abi-bindings gen-bytecode
+gen-deploy: clean gen-abi gen-abi-bindings gen-bytecode
 	@abigen --abi build/Store.abi \
-		--pkg main \
+		--pkg bindings \
 	   	--type Store \
 	   	--bin build/Store.bin \
-	    --out contract_bindings.go
+	    --out bindings/bindings.go
 	@echo "🌀 generated go bindings from solidity smart contract"
 
 .PHONY: clean
 clean:
-	@rm -rf contract_bindings.go build/
+	@rm -rf bindings/ build/
 	@echo "Cleaned contract builds"
 	@ls

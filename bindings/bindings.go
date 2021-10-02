@@ -1,7 +1,7 @@
 // Code generated - DO NOT EDIT.
 // This file is a generated binding and any manual changes will be lost.
 
-package main
+package bindings
 
 import (
 	"errors"
@@ -30,8 +30,8 @@ var (
 
 // StoreMetaData contains all meta data concerning the Store contract.
 var StoreMetaData = &bind.MetaData{
-	ABI: "[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_version\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"key\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"value\",\"type\":\"bytes32\"}],\"name\":\"ItemSet\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"items\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"key\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"value\",\"type\":\"bytes32\"}],\"name\":\"setItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}]",
-	Bin: "0x608060405234801561001057600080fd5b5060405161072138038061072183398181016040528101906100329190610162565b806000908051906020019061004892919061004f565b505061031a565b82805461005b90610234565b90600052602060002090601f01602090048101928261007d57600085556100c4565b82601f1061009657805160ff19168380011785556100c4565b828001600101855582156100c4579182015b828111156100c35782518255916020019190600101906100a8565b5b5090506100d191906100d5565b5090565b5b808211156100ee5760008160009055506001016100d6565b5090565b6000610105610100846101d0565b6101ab565b905082815260208101848484011115610121576101206102fa565b5b61012c848285610201565b509392505050565b600082601f830112610149576101486102f5565b5b81516101598482602086016100f2565b91505092915050565b60006020828403121561017857610177610304565b5b600082015167ffffffffffffffff811115610196576101956102ff565b5b6101a284828501610134565b91505092915050565b60006101b56101c6565b90506101c18282610266565b919050565b6000604051905090565b600067ffffffffffffffff8211156101eb576101ea6102c6565b5b6101f482610309565b9050602081019050919050565b60005b8381101561021f578082015181840152602081019050610204565b8381111561022e576000848401525b50505050565b6000600282049050600182168061024c57607f821691505b602082108114156102605761025f610297565b5b50919050565b61026f82610309565b810181811067ffffffffffffffff8211171561028e5761028d6102c6565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b6103f8806103296000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806348f343f31461004657806354fd4d5014610076578063f56256c714610094575b600080fd5b610060600480360381019061005b91906101c0565b6100b0565b60405161006d9190610275565b60405180910390f35b61007e6100c8565b60405161008b91906102b9565b60405180910390f35b6100ae60048036038101906100a991906101ed565b610156565b005b60016020528060005260406000206000915090505481565b600080546100d590610334565b80601f016020809104026020016040519081016040528092919081815260200182805461010190610334565b801561014e5780601f106101235761010080835404028352916020019161014e565b820191906000526020600020905b81548152906001019060200180831161013157829003601f168201915b505050505081565b8060016000848152602001908152602001600020819055507fe79e73da417710ae99aa2088575580a60415d359acfad9cdd3382d59c80281d4828260405161019f929190610290565b60405180910390a15050565b6000813590506101ba816103ab565b92915050565b6000602082840312156101d6576101d5610395565b5b60006101e4848285016101ab565b91505092915050565b6000806040838503121561020457610203610395565b5b6000610212858286016101ab565b9250506020610223858286016101ab565b9150509250929050565b610236816102f7565b82525050565b6000610247826102db565b61025181856102e6565b9350610261818560208601610301565b61026a8161039a565b840191505092915050565b600060208201905061028a600083018461022d565b92915050565b60006040820190506102a5600083018561022d565b6102b2602083018461022d565b9392505050565b600060208201905081810360008301526102d3818461023c565b905092915050565b600081519050919050565b600082825260208201905092915050565b6000819050919050565b60005b8381101561031f578082015181840152602081019050610304565b8381111561032e576000848401525b50505050565b6000600282049050600182168061034c57607f821691505b602082108114156103605761035f610366565b5b50919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b600080fd5b6000601f19601f8301169050919050565b6103b4816102f7565b81146103bf57600080fd5b5056fea2646970667358221220f3b7e5284f1fc6263e2a321a6c825a2fca4af42935bc76192d8163f6730cb1bf64736f6c63430008070033",
+	ABI: "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"key\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"}],\"name\":\"ItemSet\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"key\",\"type\":\"uint256\"}],\"name\":\"getItem\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"items\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"minter\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"key\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"}],\"name\":\"setItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
+	Bin: "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610871806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806307546172146100515780633129e7731461006f578063bfb231d21461009f578063f091718e146100cf575b600080fd5b6100596100eb565b6040516100669190610572565b60405180910390f35b6100896004803603810190610084919061046f565b61010f565b604051610096919061058d565b60405180910390f35b6100b960048036038101906100b4919061046f565b6101b4565b6040516100c6919061058d565b60405180910390f35b6100e960048036038101906100e4919061049c565b610254565b005b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b606060016000838152602001908152602001600020805461012f906106ef565b80601f016020809104026020016040519081016040528092919081815260200182805461015b906106ef565b80156101a85780601f1061017d576101008083540402835291602001916101a8565b820191906000526020600020905b81548152906001019060200180831161018b57829003601f168201915b50505050509050919050565b600160205280600052604060002060009150905080546101d3906106ef565b80601f01602080910402602001604051908101604052809291908181526020018280546101ff906106ef565b801561024c5780601f106102215761010080835404028352916020019161024c565b820191906000526020600020905b81548152906001019060200180831161022f57829003601f168201915b505050505081565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102e2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102d9906105af565b60405180910390fd5b80600160008481526020019081526020016000209080519060200190610309929190610347565b507f6a491f7d0df1899af1f06b8e6f6a07d287238e92ecc165fb8a9d243b19702e2b828260405161033b9291906105cf565b60405180910390a15050565b828054610353906106ef565b90600052602060002090601f01602090048101928261037557600085556103bc565b82601f1061038e57805160ff19168380011785556103bc565b828001600101855582156103bc579182015b828111156103bb5782518255916020019190600101906103a0565b5b5090506103c991906103cd565b5090565b5b808211156103e65760008160009055506001016103ce565b5090565b60006103fd6103f884610624565b6105ff565b905082815260208101848484011115610419576104186107b5565b5b6104248482856106ad565b509392505050565b600082601f830112610441576104406107b0565b5b81356104518482602086016103ea565b91505092915050565b60008135905061046981610824565b92915050565b600060208284031215610485576104846107bf565b5b60006104938482850161045a565b91505092915050565b600080604083850312156104b3576104b26107bf565b5b60006104c18582860161045a565b925050602083013567ffffffffffffffff8111156104e2576104e16107ba565b5b6104ee8582860161042c565b9150509250929050565b61050181610671565b82525050565b600061051282610655565b61051c8185610660565b935061052c8185602086016106bc565b610535816107c4565b840191505092915050565b600061054d602e83610660565b9150610558826107d5565b604082019050919050565b61056c816106a3565b82525050565b600060208201905061058760008301846104f8565b92915050565b600060208201905081810360008301526105a78184610507565b905092915050565b600060208201905081810360008301526105c881610540565b9050919050565b60006040820190506105e46000830185610563565b81810360208301526105f68184610507565b90509392505050565b600061060961061a565b90506106158282610721565b919050565b6000604051905090565b600067ffffffffffffffff82111561063f5761063e610781565b5b610648826107c4565b9050602081019050919050565b600081519050919050565b600082825260208201905092915050565b600061067c82610683565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b82818337600083830152505050565b60005b838110156106da5780820151818401526020810190506106bf565b838111156106e9576000848401525b50505050565b6000600282049050600182168061070757607f821691505b6020821081141561071b5761071a610752565b5b50919050565b61072a826107c4565b810181811067ffffffffffffffff8211171561074957610748610781565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4f6e6c7920746865206d696e746572206f66207468697320636f6e747261637460008201527f2063616e20736574206974656d73000000000000000000000000000000000000602082015250565b61082d816106a3565b811461083857600080fd5b5056fea264697066735822122056fd4962fbdab92ee549001dd312ab16d143132f8cf05a0464ff23468bb5333664736f6c63430008070033",
 }
 
 // StoreABI is the input ABI used to generate the binding from.
@@ -43,7 +43,7 @@ var StoreABI = StoreMetaData.ABI
 var StoreBin = StoreMetaData.Bin
 
 // DeployStore deploys a new Ethereum contract, binding an instance of Store to it.
-func DeployStore(auth *bind.TransactOpts, backend bind.ContractBackend, _version string) (common.Address, *types.Transaction, *Store, error) {
+func DeployStore(auth *bind.TransactOpts, backend bind.ContractBackend) (common.Address, *types.Transaction, *Store, error) {
 	parsed, err := StoreMetaData.GetAbi()
 	if err != nil {
 		return common.Address{}, nil, nil, err
@@ -52,7 +52,7 @@ func DeployStore(auth *bind.TransactOpts, backend bind.ContractBackend, _version
 		return common.Address{}, nil, nil, errors.New("GetABI returned nil")
 	}
 
-	address, tx, contract, err := bind.DeployContract(auth, *parsed, common.FromHex(StoreBin), backend, _version)
+	address, tx, contract, err := bind.DeployContract(auth, *parsed, common.FromHex(StoreBin), backend)
 	if err != nil {
 		return common.Address{}, nil, nil, err
 	}
@@ -201,43 +201,12 @@ func (_Store *StoreTransactorRaw) Transact(opts *bind.TransactOpts, method strin
 	return _Store.Contract.contract.Transact(opts, method, params...)
 }
 
-// Items is a free data retrieval call binding the contract method 0x48f343f3.
+// GetItem is a free data retrieval call binding the contract method 0x3129e773.
 //
-// Solidity: function items(bytes32 ) view returns(bytes32)
-func (_Store *StoreCaller) Items(opts *bind.CallOpts, arg0 [32]byte) ([32]byte, error) {
+// Solidity: function getItem(uint256 key) view returns(string)
+func (_Store *StoreCaller) GetItem(opts *bind.CallOpts, key *big.Int) (string, error) {
 	var out []interface{}
-	err := _Store.contract.Call(opts, &out, "items", arg0)
-
-	if err != nil {
-		return *new([32]byte), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new([32]byte)).(*[32]byte)
-
-	return out0, err
-
-}
-
-// Items is a free data retrieval call binding the contract method 0x48f343f3.
-//
-// Solidity: function items(bytes32 ) view returns(bytes32)
-func (_Store *StoreSession) Items(arg0 [32]byte) ([32]byte, error) {
-	return _Store.Contract.Items(&_Store.CallOpts, arg0)
-}
-
-// Items is a free data retrieval call binding the contract method 0x48f343f3.
-//
-// Solidity: function items(bytes32 ) view returns(bytes32)
-func (_Store *StoreCallerSession) Items(arg0 [32]byte) ([32]byte, error) {
-	return _Store.Contract.Items(&_Store.CallOpts, arg0)
-}
-
-// Version is a free data retrieval call binding the contract method 0x54fd4d50.
-//
-// Solidity: function version() view returns(string)
-func (_Store *StoreCaller) Version(opts *bind.CallOpts) (string, error) {
-	var out []interface{}
-	err := _Store.contract.Call(opts, &out, "version")
+	err := _Store.contract.Call(opts, &out, "getItem", key)
 
 	if err != nil {
 		return *new(string), err
@@ -249,38 +218,100 @@ func (_Store *StoreCaller) Version(opts *bind.CallOpts) (string, error) {
 
 }
 
-// Version is a free data retrieval call binding the contract method 0x54fd4d50.
+// GetItem is a free data retrieval call binding the contract method 0x3129e773.
 //
-// Solidity: function version() view returns(string)
-func (_Store *StoreSession) Version() (string, error) {
-	return _Store.Contract.Version(&_Store.CallOpts)
+// Solidity: function getItem(uint256 key) view returns(string)
+func (_Store *StoreSession) GetItem(key *big.Int) (string, error) {
+	return _Store.Contract.GetItem(&_Store.CallOpts, key)
 }
 
-// Version is a free data retrieval call binding the contract method 0x54fd4d50.
+// GetItem is a free data retrieval call binding the contract method 0x3129e773.
 //
-// Solidity: function version() view returns(string)
-func (_Store *StoreCallerSession) Version() (string, error) {
-	return _Store.Contract.Version(&_Store.CallOpts)
+// Solidity: function getItem(uint256 key) view returns(string)
+func (_Store *StoreCallerSession) GetItem(key *big.Int) (string, error) {
+	return _Store.Contract.GetItem(&_Store.CallOpts, key)
 }
 
-// SetItem is a paid mutator transaction binding the contract method 0xf56256c7.
+// Items is a free data retrieval call binding the contract method 0xbfb231d2.
 //
-// Solidity: function setItem(bytes32 key, bytes32 value) returns()
-func (_Store *StoreTransactor) SetItem(opts *bind.TransactOpts, key [32]byte, value [32]byte) (*types.Transaction, error) {
+// Solidity: function items(uint256 ) view returns(string)
+func (_Store *StoreCaller) Items(opts *bind.CallOpts, arg0 *big.Int) (string, error) {
+	var out []interface{}
+	err := _Store.contract.Call(opts, &out, "items", arg0)
+
+	if err != nil {
+		return *new(string), err
+	}
+
+	out0 := *abi.ConvertType(out[0], new(string)).(*string)
+
+	return out0, err
+
+}
+
+// Items is a free data retrieval call binding the contract method 0xbfb231d2.
+//
+// Solidity: function items(uint256 ) view returns(string)
+func (_Store *StoreSession) Items(arg0 *big.Int) (string, error) {
+	return _Store.Contract.Items(&_Store.CallOpts, arg0)
+}
+
+// Items is a free data retrieval call binding the contract method 0xbfb231d2.
+//
+// Solidity: function items(uint256 ) view returns(string)
+func (_Store *StoreCallerSession) Items(arg0 *big.Int) (string, error) {
+	return _Store.Contract.Items(&_Store.CallOpts, arg0)
+}
+
+// Minter is a free data retrieval call binding the contract method 0x07546172.
+//
+// Solidity: function minter() view returns(address)
+func (_Store *StoreCaller) Minter(opts *bind.CallOpts) (common.Address, error) {
+	var out []interface{}
+	err := _Store.contract.Call(opts, &out, "minter")
+
+	if err != nil {
+		return *new(common.Address), err
+	}
+
+	out0 := *abi.ConvertType(out[0], new(common.Address)).(*common.Address)
+
+	return out0, err
+
+}
+
+// Minter is a free data retrieval call binding the contract method 0x07546172.
+//
+// Solidity: function minter() view returns(address)
+func (_Store *StoreSession) Minter() (common.Address, error) {
+	return _Store.Contract.Minter(&_Store.CallOpts)
+}
+
+// Minter is a free data retrieval call binding the contract method 0x07546172.
+//
+// Solidity: function minter() view returns(address)
+func (_Store *StoreCallerSession) Minter() (common.Address, error) {
+	return _Store.Contract.Minter(&_Store.CallOpts)
+}
+
+// SetItem is a paid mutator transaction binding the contract method 0xf091718e.
+//
+// Solidity: function setItem(uint256 key, string value) returns()
+func (_Store *StoreTransactor) SetItem(opts *bind.TransactOpts, key *big.Int, value string) (*types.Transaction, error) {
 	return _Store.contract.Transact(opts, "setItem", key, value)
 }
 
-// SetItem is a paid mutator transaction binding the contract method 0xf56256c7.
+// SetItem is a paid mutator transaction binding the contract method 0xf091718e.
 //
-// Solidity: function setItem(bytes32 key, bytes32 value) returns()
-func (_Store *StoreSession) SetItem(key [32]byte, value [32]byte) (*types.Transaction, error) {
+// Solidity: function setItem(uint256 key, string value) returns()
+func (_Store *StoreSession) SetItem(key *big.Int, value string) (*types.Transaction, error) {
 	return _Store.Contract.SetItem(&_Store.TransactOpts, key, value)
 }
 
-// SetItem is a paid mutator transaction binding the contract method 0xf56256c7.
+// SetItem is a paid mutator transaction binding the contract method 0xf091718e.
 //
-// Solidity: function setItem(bytes32 key, bytes32 value) returns()
-func (_Store *StoreTransactorSession) SetItem(key [32]byte, value [32]byte) (*types.Transaction, error) {
+// Solidity: function setItem(uint256 key, string value) returns()
+func (_Store *StoreTransactorSession) SetItem(key *big.Int, value string) (*types.Transaction, error) {
 	return _Store.Contract.SetItem(&_Store.TransactOpts, key, value)
 }
 
@@ -353,14 +384,14 @@ func (it *StoreItemSetIterator) Close() error {
 
 // StoreItemSet represents a ItemSet event raised by the Store contract.
 type StoreItemSet struct {
-	Key   [32]byte
-	Value [32]byte
+	Key   *big.Int
+	Value string
 	Raw   types.Log // Blockchain specific contextual infos
 }
 
-// FilterItemSet is a free log retrieval operation binding the contract event 0xe79e73da417710ae99aa2088575580a60415d359acfad9cdd3382d59c80281d4.
+// FilterItemSet is a free log retrieval operation binding the contract event 0x6a491f7d0df1899af1f06b8e6f6a07d287238e92ecc165fb8a9d243b19702e2b.
 //
-// Solidity: event ItemSet(bytes32 key, bytes32 value)
+// Solidity: event ItemSet(uint256 key, string value)
 func (_Store *StoreFilterer) FilterItemSet(opts *bind.FilterOpts) (*StoreItemSetIterator, error) {
 
 	logs, sub, err := _Store.contract.FilterLogs(opts, "ItemSet")
@@ -370,9 +401,9 @@ func (_Store *StoreFilterer) FilterItemSet(opts *bind.FilterOpts) (*StoreItemSet
 	return &StoreItemSetIterator{contract: _Store.contract, event: "ItemSet", logs: logs, sub: sub}, nil
 }
 
-// WatchItemSet is a free log subscription operation binding the contract event 0xe79e73da417710ae99aa2088575580a60415d359acfad9cdd3382d59c80281d4.
+// WatchItemSet is a free log subscription operation binding the contract event 0x6a491f7d0df1899af1f06b8e6f6a07d287238e92ecc165fb8a9d243b19702e2b.
 //
-// Solidity: event ItemSet(bytes32 key, bytes32 value)
+// Solidity: event ItemSet(uint256 key, string value)
 func (_Store *StoreFilterer) WatchItemSet(opts *bind.WatchOpts, sink chan<- *StoreItemSet) (event.Subscription, error) {
 
 	logs, sub, err := _Store.contract.WatchLogs(opts, "ItemSet")
@@ -407,9 +438,9 @@ func (_Store *StoreFilterer) WatchItemSet(opts *bind.WatchOpts, sink chan<- *Sto
 	}), nil
 }
 
-// ParseItemSet is a log parse operation binding the contract event 0xe79e73da417710ae99aa2088575580a60415d359acfad9cdd3382d59c80281d4.
+// ParseItemSet is a log parse operation binding the contract event 0x6a491f7d0df1899af1f06b8e6f6a07d287238e92ecc165fb8a9d243b19702e2b.
 //
-// Solidity: event ItemSet(bytes32 key, bytes32 value)
+// Solidity: event ItemSet(uint256 key, string value)
 func (_Store *StoreFilterer) ParseItemSet(log types.Log) (*StoreItemSet, error) {
 	event := new(StoreItemSet)
 	if err := _Store.contract.UnpackLog(event, "ItemSet", log); err != nil {
